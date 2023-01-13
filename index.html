@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // Щасливий квиток
+
+
+        // const userTicket = prompt('Номер білета із шести цифр');
+
+        // const ticketNumber = userTicket.split(``);
+
+        // let firstPart = 0;
+        // let secondPart = 0;
+
+        // for (let i = 0, j = 3; i < 3; i++, j++) {
+        //     firstPart += Number(ticketNumber[i]);
+        //     secondPart += +ticketNumber[j];
+        // }
+
+        // console.log(firstPart, secondPart);
+
+        // if (firstPart === secondPart) {
+        //     console.log(`Ваш квиток щасливий`);
+        // } else {
+        //     console.log(`Звичайний квиток, пощастить іншим разом!`);
+        // }
+
+
+
+        // Найкоротше слово
+
+
+        const stringArray =
+            "bitcoin take over the world maybe oh who knows perhaps".split(
+                " "
+            );
+        let lettersNumber = stringArray[0].length;
+        const shortWords = [stringArray[0]];
+
+        for (i = 1; i < stringArray.length; i++) {
+            const curLen = stringArray[i].length;
+
+            if (curLen <= lettersNumber) {
+                if (curLen < lettersNumber) shortWords.length = 0;
+                lettersNumber = curLen;
+                if (!shortWords.includes(stringArray[i])) {
+                    shortWords.push(stringArray[i]);
+                }
+            }
+        }
+        console.log(`Слово - ${shortWords} - найкоротше , у ньому ${lettersNumber} літер(и).`);
+
+        //         ДНК
+        //  У рядках ДНК символи «А» і «Т» доповнюють один одного, як «С» і «G». 
+        // Напишіть програму, яка питає у користувача рядок з однією стороною ДНК - вам потрібно отримати іншу комплементарну сторону. Нитку ДНК ніколи не буває порожнім або ДНК взагалі немає.
+
+        // const userDna = "TATAGGCACAeeee";
+
+        // let result = ``;
+
+        // for (let i = 0; i < userDna.length; i++) {
+        //     if (userDna[i] === 'A') {
+        //         result = result + 'T';
+        //     }
+        //     if (userDna[i] === 'T') {
+        //         result = result + 'A';
+        //     }
+        //     if (userDna[i] === 'C') {
+        //         result = result + 'G';
+        //     }
+        //     if (userDna[i] === 'G') {
+        //         result = result + 'C';
+        //     }
+        // }
+        // for (let i = 0; i < userDna.length; i++) {
+        //     switch (userDna[i]) {
+        //         case 'a':
+        //         case 'A': {
+        //             result = result + 'T';
+        //             break;
+        //         }
+        //         case 't':
+        //         case 'T': {
+        //             result = result + 'A';
+        //             break;
+        //         }
+        //         case 'c':
+        //         case 'C': {
+        //             result = result + 'G';
+        //             break;
+        //         }
+        //         case 'g':
+        //         case 'G': {
+        //             result = result + 'C';
+        //             break;
+        //         }
+        //     }
+        // }
+        // const dict = {
+        //     A: "T",
+        //     T: "A",
+        //     C: "G",
+        //     G: "C",
+        // };
+        // for (let i = 0; i < userDna.length; i++) {
+        //     result += dict[userDna[i]] ? ? "";
+        // }
+
+        // console.log(`Пара до вашої ДНК: ${result}.`);
+    </script>
+</body>
+
+</html>

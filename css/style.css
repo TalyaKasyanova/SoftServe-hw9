@@ -1,0 +1,62 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+body {
+    background-color: #99c1e7;
+    color: #b47807;
+    font-family: 'Varela Round', sans-serif;
+    margin-bottom: 80px;
+}
+
+
+.main {
+    padding: 0 20px;
+}
+
+.message {
+    padding: 20px 0;
+    font-size: 50px;
+    text-align: center;
+}
+
+.gameboard {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 454px;
+    height: 454px;
+    border: 2px solid #000000;
+    margin: 0px auto;
+}
+
+.field {
+    width: 150px;
+    height: 150px;
+    border: 1px solid #000000;
+    background-color: #99c1e7;
+    font-size: 100px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+.restart-button {
+    padding: 10px 20px;
+    border: 3px solid #000000;
+    border-radius: 7px;
+    background-color: #295783;
+    color: #b47807;
+    font-size: 50px;
+    cursor: pointer;
+}

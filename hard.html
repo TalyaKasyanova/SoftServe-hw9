@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./js/hard.js"></script>
+</head>
+
+<body>
+    <main>
+        <div>
+            <!-- 
+            
+            Калькулятор
+
+            Написати функцію – калькулятор. Функція приймає рядок з прикладом, визначає, яка дія необхідна виконати (+ -
+            * /), переводить операнди у числа, вирішує приклад та повертає результат.
+
+                    -->
+
+
+            <!-- поле для 1 числа -->
+            <input id="num1" />
+
+            <!-- оператори -->
+            <div id="operator_btns">
+                <button id="plus" onclick="push='+'">+</button>
+                <button id="minus" onclick="push='-'">-</button>
+                <button id="times" onclick="push='*'">x</button>
+                <button id="divide" onclick="push='/'">:</button>
+            </div>
+
+            <!-- поле для 2 числа -->
+            <input id="num2" />
+            <br>
+
+            <!-- кнопка дії -->
+            <button onclick="func()">Порахувати</button>
+            <p id="result"></p>
+
+
+
+
+        </div>
+    </main>
+
+
+</body>
+
+</html>
